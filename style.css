@@ -148,8 +148,14 @@ form.sign-in-form {
 }
 
 .btn:hover {
-  background-color: #6C63FF;
+  background-color: #aaa6fd;
+  transition: 0.5s;
 }
+
+.btn:active{
+  transform: scale(0.9);
+}
+
 .panels-container {
   position: absolute;
   height: 100%;
@@ -226,12 +232,14 @@ form.sign-in-form {
   font-size: 0.8rem;
 }
 
+.btn.transparent:hover{
+  background-color: #aaa6fd;
+}
+
 .right-panel .image,
 .right-panel .content {
   transform: translateX(800px);
 }
-
-/* ANIMATION */
 
 .container.sign-up-mode:before {
   transform: translate(100%, -50%);
